@@ -11,6 +11,7 @@
 		7CAAFF2B2AE1A0190023F3B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAAFF2A2AE1A0190023F3B5 /* ContentView.swift */; };
 		7CAAFF2D2AE1A01A0023F3B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CAAFF2C2AE1A01A0023F3B5 /* Assets.xcassets */; };
 		7CAAFF302AE1A01A0023F3B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CAAFF2F2AE1A01A0023F3B5 /* Preview Assets.xcassets */; };
+		7CAAFF382AE1A04B0023F3B5 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAAFF372AE1A04A0023F3B5 /* LockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		7CAAFF2A2AE1A0190023F3B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CAAFF2C2AE1A01A0023F3B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CAAFF2F2AE1A01A0023F3B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7CAAFF372AE1A04A0023F3B5 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		7CAAFF272AE1A0190023F3B5 /* LockSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7CAAFF362AE1A0260023F3B5 /* View */,
 				7CAAFF282AE1A0190023F3B5 /* LockSwiftUIApp.swift */,
 				7CAAFF2A2AE1A0190023F3B5 /* ContentView.swift */,
 				7CAAFF2C2AE1A01A0023F3B5 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				7CAAFF2F2AE1A01A0023F3B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7CAAFF362AE1A0260023F3B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CAAFF372AE1A04A0023F3B5 /* LockView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				7CAAFF2B2AE1A0190023F3B5 /* ContentView.swift in Sources */,
 				7CAAFF292AE1A0190023F3B5 /* LockSwiftUIApp.swift in Sources */,
+				7CAAFF382AE1A04B0023F3B5 /* LockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +286,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LockSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "we need your face id for access app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +315,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LockSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "we need your face id for access app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
